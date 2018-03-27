@@ -1,0 +1,17 @@
+output_dir: ../Classes/SwiftGen/
+xcassets:
+    paths: Assets.xcassets
+    templateName: swift4
+    output: ImagesConstants.generated.swift
+strings:
+    paths: Base.lproj/Localizable.strings
+    templateName: structured-swift4
+    output: Localized.generated.swift
+colors:
+    paths: colors.json
+    templateName: swift4
+    output: ColorsConstants.generated.swift
+#fonts:
+#    paths: Fonts
+#    templateName: swift4
+#    output: FontsConstants.generated.swift

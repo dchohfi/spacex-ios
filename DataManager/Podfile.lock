@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (4.7.0)
+  - Moya (11.0.1):
+    - Moya/Core (= 11.0.1)
+  - Moya/Core (11.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - Result (3.2.4)
+  - RxSwift (4.1.2)
+  - SwiftLint (0.25.0)
+  - SwiftResolver (1.0.9)
+
+DEPENDENCIES:
+  - Moya
+  - Nimble
+  - Quick
+  - RxSwift
+  - SwiftLint
+  - SwiftResolver
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SwiftResolver: 18070cbf9005d36248506b01105729ca2372168a
+
+PODFILE CHECKSUM: 5a124562adbe471647bead4572723e8d4cf5f9c3
+
+COCOAPODS: 1.4.0

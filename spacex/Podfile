@@ -1,0 +1,40 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+inhibit_all_warnings!
+
+platform :ios, '9.3'
+
+def misc_dependencies
+  pod 'SwiftLint', '~> 0.24'
+  pod 'SwiftGen', '~> 5.2'
+end
+
+def shared_dependencies
+  pod 'DataManager', :path => '../DataManager'
+  pod 'ModuleArchitecture'
+end
+
+def tests_dependencies
+  pod 'DataManagerTests', :path => '../DataManager'
+  pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  pod 'Nimble-Snapshots' , '~> 6.3.0'
+end
+
+target 'spacex' do
+  misc_dependencies
+  shared_dependencies
+
+  target 'spacexTests' do
+    inherit! :search_paths
+    tests_dependencies
+  end
+
+end
+
+# target 'spacex WatchKit Extension' do
+#   platform :watchos, '4.1'
+# 
+#   misc_dependencies
+#   shared_dependencies
+# end

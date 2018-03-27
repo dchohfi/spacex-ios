@@ -1,0 +1,20 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.3'
+inhibit_all_warnings!
+
+target 'DataManager' do
+  use_frameworks!
+
+  pod 'SwiftLint'
+  pod 'SwiftResolver'
+  pod 'Moya'
+  pod 'RxSwift'
+
+  target 'DataManagerTests' do
+    inherit! :search_paths
+
+    pod 'Quick'
+    pod 'Nimble'
+  end
+end

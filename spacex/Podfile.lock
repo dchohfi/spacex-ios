@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.7.0)
+  - DataManager (1.0.0):
+    - Moya
+    - RxSwift
+    - SwiftResolver
+  - DataManagerTests (0.1.0):
+    - DataManager
+    - Nimble
+    - Quick
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - ModuleArchitecture (0.1.0)
+  - Moya (11.0.1):
+    - Moya/Core (= 11.0.1)
+  - Moya/Core (11.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Nimble (7.0.3)
+  - Nimble-Snapshots (6.3.0):
+    - Nimble-Snapshots/Core (= 6.3.0)
+  - Nimble-Snapshots/Core (6.3.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble (~> 7.0)
+  - Quick (1.2.0)
+  - Result (3.2.4)
+  - RxSwift (4.1.2)
+  - SwiftGen (5.3.0)
+  - SwiftLint (0.25.0)
+  - SwiftResolver (1.0.9)
+
+DEPENDENCIES:
+  - DataManager (from `../DataManager`)
+  - DataManagerTests (from `../DataManager`)
+  - FBSnapshotTestCase (~> 2.1.4)
+  - ModuleArchitecture
+  - Nimble-Snapshots (~> 6.3.0)
+  - SwiftGen (~> 5.2)
+  - SwiftLint (~> 0.24)
+
+EXTERNAL SOURCES:
+  DataManager:
+    :path: ../DataManager
+  DataManagerTests:
+    :path: ../DataManager
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  DataManager: 0a1112321ef2c3b64017b66eacb553f62d4dd599
+  DataManagerTests: 2a8854f2d74d4eae54dfb936f06ae6b3cc7425c0
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  ModuleArchitecture: d586db5d6d33902ef1c1652de496b020ab35bcc3
+  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SwiftResolver: 18070cbf9005d36248506b01105729ca2372168a
+
+PODFILE CHECKSUM: 2ecc4a9abda3b0ea3017b671440f6ea3a70c022f
+
+COCOAPODS: 1.3.1
