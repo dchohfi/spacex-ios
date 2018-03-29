@@ -14,7 +14,7 @@ final class AppRouter: AppRouterType {
     }
     
     func start() {
-        let launchesRouter = self.launchesModule.build()
+        let launchesRouter = self.launchesModule.build(withListener: self)
         self.currentChield = launchesRouter
 
         let viewController = launchesRouter.viewController.asViewController()
@@ -25,5 +25,11 @@ final class AppRouter: AppRouterType {
     }
     
     func stop() {
+    }
+}
+
+extension AppRouter: LaunchesListenter {
+    func didSelect(launch: Launch) {
+        
     }
 }

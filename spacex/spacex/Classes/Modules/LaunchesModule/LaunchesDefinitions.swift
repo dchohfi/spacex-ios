@@ -1,7 +1,7 @@
 import ModuleArchitecture
 
 protocol LaunchesModuleType: Module {
-    func build() -> LaunchesRouterType
+    func build(withListener: LaunchesListenter) -> LaunchesRouterType
 }
 
 protocol LaunchesRouterType: Router {

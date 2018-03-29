@@ -3,7 +3,7 @@ import DataManager
 import RxSwift
 
 protocol LaunchesListenter: class {
-    
+    func didSelect(launch: Launch)
 }
 
 final class LaunchesPresenter<View: LaunchesView>: LaunchesPresenterType {
