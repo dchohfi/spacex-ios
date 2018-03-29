@@ -25,6 +25,8 @@ target 'spacex' do
   misc_dependencies
   shared_dependencies
 
+  pod 'SnapKit'
+
   target 'spacexTests' do
     inherit! :search_paths
     tests_dependencies

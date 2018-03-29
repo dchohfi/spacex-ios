@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2082CF42206C365400AF63A8 /* LaunchesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF3B206C365400AF63A8 /* LaunchesModule.swift */; };
+		2082CF43206C365400AF63A8 /* LaunchesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF3C206C365400AF63A8 /* LaunchesPresenter.swift */; };
+		2082CF44206C365400AF63A8 /* LaunchesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF3D206C365400AF63A8 /* LaunchesRouter.swift */; };
+		2082CF45206C365400AF63A8 /* LaunchesViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF3E206C365400AF63A8 /* LaunchesViewLayout.swift */; };
+		2082CF46206C365400AF63A8 /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF3F206C365400AF63A8 /* LaunchesViewController.swift */; };
+		2082CF47206C365400AF63A8 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF40206C365400AF63A8 /* LaunchesViewModel.swift */; };
+		2082CF48206C365400AF63A8 /* LaunchesDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF41206C365400AF63A8 /* LaunchesDefinitions.swift */; };
+		2082CF4E206C48E100AF63A8 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF4A206C48E100AF63A8 /* AppModule.swift */; };
+		2082CF50206C48E100AF63A8 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF4C206C48E100AF63A8 /* AppRouter.swift */; };
+		2082CF51206C48E100AF63A8 /* AppDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF4D206C48E100AF63A8 /* AppDefinitions.swift */; };
 		20AC24D92007CB20009EB1A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC24D22007CB20009EB1A4 /* AppDelegate.swift */; };
-		20AC24DA2007CB20009EB1A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC24D32007CB20009EB1A4 /* ViewController.swift */; };
 		20AC24DB2007CB20009EB1A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AC24D52007CB20009EB1A4 /* Assets.xcassets */; };
 		20AC24DC2007CB20009EB1A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AC24D62007CB20009EB1A4 /* LaunchScreen.storyboard */; };
 		5B7DAD46487492556E6C7AA2 /* Pods_spacex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6459C9607ADDD27EFC3425C8 /* Pods_spacex.framework */; };
@@ -34,8 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2082CF3B206C365400AF63A8 /* LaunchesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModule.swift; sourceTree = "<group>"; };
+		2082CF3C206C365400AF63A8 /* LaunchesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPresenter.swift; sourceTree = "<group>"; };
+		2082CF3D206C365400AF63A8 /* LaunchesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRouter.swift; sourceTree = "<group>"; };
+		2082CF3E206C365400AF63A8 /* LaunchesViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewLayout.swift; sourceTree = "<group>"; };
+		2082CF3F206C365400AF63A8 /* LaunchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
+		2082CF40206C365400AF63A8 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
+		2082CF41206C365400AF63A8 /* LaunchesDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDefinitions.swift; sourceTree = "<group>"; };
+		2082CF4A206C48E100AF63A8 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		2082CF4C206C48E100AF63A8 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		2082CF4D206C48E100AF63A8 /* AppDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefinitions.swift; sourceTree = "<group>"; };
 		20AC24D22007CB20009EB1A4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20AC24D32007CB20009EB1A4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20AC24D52007CB20009EB1A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20AC24D72007CB20009EB1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20AC24D82007CB20009EB1A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,11 +96,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2082CF2C206C34B500AF63A8 /* LaunchesModule */ = {
+			isa = PBXGroup;
+			children = (
+				2082CF3B206C365400AF63A8 /* LaunchesModule.swift */,
+				2082CF3C206C365400AF63A8 /* LaunchesPresenter.swift */,
+				2082CF3D206C365400AF63A8 /* LaunchesRouter.swift */,
+				2082CF3E206C365400AF63A8 /* LaunchesViewLayout.swift */,
+				2082CF3F206C365400AF63A8 /* LaunchesViewController.swift */,
+				2082CF40206C365400AF63A8 /* LaunchesViewModel.swift */,
+				2082CF41206C365400AF63A8 /* LaunchesDefinitions.swift */,
+			);
+			name = LaunchesModule;
+			path = Modules/LaunchesModule;
+			sourceTree = "<group>";
+		};
+		2082CF49206C48D700AF63A8 /* AppModule */ = {
+			isa = PBXGroup;
+			children = (
+				2082CF4A206C48E100AF63A8 /* AppModule.swift */,
+				2082CF4C206C48E100AF63A8 /* AppRouter.swift */,
+				2082CF4D206C48E100AF63A8 /* AppDefinitions.swift */,
+			);
+			name = AppModule;
+			path = Modules/AppModule;
+			sourceTree = "<group>";
+		};
 		20AC24D12007CB20009EB1A4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				20AC24D22007CB20009EB1A4 /* AppDelegate.swift */,
-				20AC24D32007CB20009EB1A4 /* ViewController.swift */,
+				2082CF49206C48D700AF63A8 /* AppModule */,
+				2082CF2C206C34B500AF63A8 /* LaunchesModule */,
 				A0A7900E2018C51400A155EF /* SwiftGen */,
 			);
 			path = Classes;
@@ -317,6 +362,7 @@
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftResolver/SwiftResolver.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -327,6 +373,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftResolver.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,9 +535,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A790142018C51400A155EF /* Localized.generated.swift in Sources */,
-				20AC24DA2007CB20009EB1A4 /* ViewController.swift in Sources */,
+				2082CF43206C365400AF63A8 /* LaunchesPresenter.swift in Sources */,
+				2082CF51206C48E100AF63A8 /* AppDefinitions.swift in Sources */,
+				2082CF48206C365400AF63A8 /* LaunchesDefinitions.swift in Sources */,
+				2082CF50206C48E100AF63A8 /* AppRouter.swift in Sources */,
+				2082CF44206C365400AF63A8 /* LaunchesRouter.swift in Sources */,
 				20AC24D92007CB20009EB1A4 /* AppDelegate.swift in Sources */,
+				2082CF4E206C48E100AF63A8 /* AppModule.swift in Sources */,
+				2082CF45206C365400AF63A8 /* LaunchesViewLayout.swift in Sources */,
 				A0A790122018C51400A155EF /* ColorsConstants.generated.swift in Sources */,
+				2082CF47206C365400AF63A8 /* LaunchesViewModel.swift in Sources */,
+				2082CF46206C365400AF63A8 /* LaunchesViewController.swift in Sources */,
+				2082CF42206C365400AF63A8 /* LaunchesModule.swift in Sources */,
 				A0A790132018C51400A155EF /* ImagesConstants.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
