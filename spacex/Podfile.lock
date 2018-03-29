@@ -13,7 +13,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ModuleArchitecture (0.1.0)
+  - ModuleArchitecture (0.2.0)
   - Moya (11.0.1):
     - Moya/Core (= 11.0.1)
   - Moya/Core (11.0.1):
@@ -54,7 +54,7 @@ SPEC CHECKSUMS:
   DataManager: 0a1112321ef2c3b64017b66eacb553f62d4dd599
   DataManagerTests: 2a8854f2d74d4eae54dfb936f06ae6b3cc7425c0
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ModuleArchitecture: d586db5d6d33902ef1c1652de496b020ab35bcc3
+  ModuleArchitecture: 6c31f70d317ae4804858ac5f6af8740d1d8d22b3
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52

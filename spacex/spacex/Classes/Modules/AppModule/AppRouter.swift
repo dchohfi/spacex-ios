@@ -4,21 +4,24 @@ import DataManager
 final class AppRouter: AppRouterType {
     private let window: UIWindow
 
-    private let launchesRouter: LaunchesRouterType
-    private(set) var children: [Router] = []
+    private let launchesModule: LaunchesModuleType
+
+    private(set) var currentChield: Router?
     
-    init(window: UIWindow, launchesRouter: LaunchesRouterType) {
+    init(window: UIWindow, launchesModule: LaunchesModuleType) {
         self.window = window
-        self.launchesRouter = launchesRouter
+        self.launchesModule = launchesModule
     }
     
     func start() {
-        let viewController = self.launchesRouter.viewController.asViewController()
+        let launchesRouter = self.launchesModule.build()
+        self.currentChield = launchesRouter
+
+        let viewController = launchesRouter.viewController.asViewController()
         self.window.rootViewController = UINavigationController(rootViewController: viewController)
         self.window.makeKeyAndVisible()
 
-        self.children.append(self.launchesRouter)
-        self.launchesRouter.start()
+        launchesRouter.start()
     }
     
     func stop() {

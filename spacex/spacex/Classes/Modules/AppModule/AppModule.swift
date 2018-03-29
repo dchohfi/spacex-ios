@@ -13,6 +13,6 @@ final class AppModule: AppModuleType {
 
     func build() -> AppRouterType {
         return AppRouter(window: self.window,
-                         launchesRouter: self.launchesModule.build())
+                         launchesModule: self.launchesModule)
     }
 }

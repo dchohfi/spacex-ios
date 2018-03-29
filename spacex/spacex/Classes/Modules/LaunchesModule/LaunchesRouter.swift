@@ -3,7 +3,8 @@ import ModuleArchitecture
 final class LaunchesRouter: LaunchesRouterType {
     private let presenter: LaunchesPresenterType
     let viewController: LaunchesViewControllerType
-    private(set) var children: [Router] = []
+
+    private(set) var currentChield: Router?
     
     init(presenter: LaunchesPresenterType, viewController: LaunchesViewControllerType) {
         self.presenter = presenter
