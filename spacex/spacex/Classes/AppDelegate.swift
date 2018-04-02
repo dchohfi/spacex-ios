@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
 
         let launchesModule = LaunchesModule(repository: container.resolve())
-        let appRouter = AppModule(window: window, launchesModule: launchesModule).build()
+        let launchDetailsModule = LaunchDetailsModule()
+        let appRouter = AppModule(window: window,
+                                  launchesModule: launchesModule,
+                                  launchDetailsModule: launchDetailsModule).build()
         self.appRouter = appRouter
 
         appRouter.start()

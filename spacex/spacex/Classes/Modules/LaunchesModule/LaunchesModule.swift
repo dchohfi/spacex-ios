@@ -17,6 +17,7 @@ final class LaunchesModule: LaunchesModuleType {
         viewController.delegate = presenter
         presenter.view = viewController
         presenter.router = router
+        presenter.listener = withListener
         return router
     }
 }
