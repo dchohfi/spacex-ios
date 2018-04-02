@@ -1,7 +1,7 @@
 import ModuleArchitecture
 
 protocol LaunchesModuleType: Module {
-    func build(withListener: LaunchesListenter) -> LaunchesRouterType
+    func buildWith(listener: LaunchesListenter) -> LaunchesRouterType
 }
 
 protocol LaunchesRouterType: Router {
@@ -9,11 +9,11 @@ protocol LaunchesRouterType: Router {
 }
 
 protocol LaunchesPresenterType: Presenter, LaunchesViewControllerDelegate {
-    weak var listener: LaunchesListenter? { get set }
+    var listener: LaunchesListenter? { get set }
 }
 
 protocol LaunchesViewControllerType: ViewControllerType {
-    weak var delegate: LaunchesViewControllerDelegate? { get set }
+    var delegate: LaunchesViewControllerDelegate? { get set }
 }
 
 protocol LaunchesView: View where ViewModelType == LaunchesViewModel {

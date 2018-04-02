@@ -8,11 +8,11 @@ echo "Mocks Input Directory = $INPUT_DIR"
 
 # Generate mock files, include as many input files as you'd like to create mocks for.
 ${PODS_ROOT}/Cuckoo/run generate --testable "$PROJECT_NAME" \
+--no-timestamp --no-class-mocking \
 --output "${OUTPUT_FILE}" \
-"$INPUT_DIR/Protocol.swift" \
-# ... and so forth
+"$INPUT_DIR/Repositories/Protocols/SpaceXRepositoryType.swift"
 
 # After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.
 
 # Remove timestamps from OUTPUT_FILE
-sed -i '' -e 's/.swift at .*$/.swift/' ${OUTPUT_FILE}
+# sed -i '' -e 's/.swift at .*$/.swift/' ${OUTPUT_FILE}

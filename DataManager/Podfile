@@ -16,5 +16,6 @@ target 'DataManager' do
 
     pod 'Quick'
     pod 'Nimble'
+    pod 'Cuckoo'
   end
 end

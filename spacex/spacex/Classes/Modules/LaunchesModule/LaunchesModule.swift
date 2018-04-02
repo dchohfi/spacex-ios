@@ -9,8 +9,9 @@ final class LaunchesModule: LaunchesModuleType {
         self.repository = repository
     }
 
-    func build(withListener: LaunchesListenter) -> LaunchesRouterType {
+    func buildWith(listener: LaunchesListenter) -> LaunchesRouterType {
         let presenter = LaunchesPresenter<LaunchesViewController>(repository: self.repository)
+        presenter.listener = listener
         let viewController = LaunchesViewController()
         let router = LaunchesRouter(presenter: presenter, viewController: viewController)
         viewController.delegate = presenter

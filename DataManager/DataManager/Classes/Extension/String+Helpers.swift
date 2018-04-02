@@ -1,5 +1,5 @@
 extension String {
-    func mapOrFail() -> URL {
+    public func mapOrFail() -> URL {
         guard let url = URL(string: self) else {
             fatalError("Invalid URL: \(self)")
         }

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.0)
+  - Cuckoo (0.11.1)
   - Moya (11.0.1):
     - Moya/Core (= 11.0.1)
   - Moya/Core (11.0.1):
@@ -13,6 +14,7 @@ PODS:
   - SwiftResolver (1.0.9)
 
 DEPENDENCIES:
+  - Cuckoo
   - Moya
   - Nimble
   - Quick
@@ -22,6 +24,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Cuckoo: 7fdecace437a01297c99c11859d4e4b3fb139f2b
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
@@ -30,6 +33,6 @@ SPEC CHECKSUMS:
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   SwiftResolver: 18070cbf9005d36248506b01105729ca2372168a
 
-PODFILE CHECKSUM: 5a124562adbe471647bead4572723e8d4cf5f9c3
+PODFILE CHECKSUM: 6e135bbb0ac6ab5dc3645136d3bf68c4a8b21b1a
 
 COCOAPODS: 1.4.0

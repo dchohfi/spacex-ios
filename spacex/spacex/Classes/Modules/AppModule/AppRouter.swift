@@ -14,7 +14,7 @@ final class AppRouter: AppRouterType {
     }
     
     func start() {
-        let launchesRouter = self.launchesModule.build(withListener: self)
+        let launchesRouter = self.launchesModule.buildWith(listener: self)
         self.currentChield = launchesRouter
 
         let viewController = launchesRouter.viewController.asViewController()

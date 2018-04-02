@@ -23,4 +23,5 @@ Pod::Spec.new do |s|
   s.dependency "DataManager"
   s.dependency "Nimble"
   s.dependency "Quick"
+  s.dependency "Cuckoo"
 end

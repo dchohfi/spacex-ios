@@ -21,7 +21,8 @@ extension DataContainer: DataContainerType {
 
 extension DataContainer {
     private func registerDependencies(plugins: [PluginType]) {
-        self.container.register { RequestProvider(provider: MoyaProvider<MultiTarget>(plugins: plugins)) }.as(RequestProviderType.self)
+        self.container.register { RequestProvider(provider: MoyaProvider<MultiTarget>(plugins: plugins)) }
+            .as(RequestProviderType.self)
         self.container.register { SpaceXRepository(requestProvider: $0) }.as(SpaceXRepositoryType.self)
     }
 }
