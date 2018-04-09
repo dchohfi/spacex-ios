@@ -4,20 +4,22 @@ import DataManager
 final class LaunchesModule: LaunchesModuleType {
 
     private let repository: SpaceXRepositoryType
+    private let launchDetailsModule: LaunchDetailsModuleType
 
-    init(repository: SpaceXRepositoryType) {
+    init(repository: SpaceXRepositoryType, launchDetailsModule: LaunchDetailsModuleType) {
         self.repository = repository
+        self.launchDetailsModule = launchDetailsModule
     }
 
-    func buildWith(listener: LaunchesListenter) -> LaunchesRouterType {
+    func build() -> LaunchesRouterType {
         let presenter = LaunchesPresenter<LaunchesViewController>(repository: self.repository)
-        presenter.listener = listener
         let viewController = LaunchesViewController()
-        let router = LaunchesRouter(presenter: presenter, viewController: viewController)
+        let router = LaunchesRouter(presenter: presenter,
+                                    viewController: viewController,
+                                    launchDetailsModule: self.launchDetailsModule)
         viewController.delegate = presenter
         presenter.view = viewController
         presenter.router = router
-        presenter.listener = withListener
         return router
     }
 }

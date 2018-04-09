@@ -1,11 +1,14 @@
 import ModuleArchitecture
+import DataManager
 
 protocol LaunchesModuleType: Module {
-    func buildWith(listener: LaunchesListenter) -> LaunchesRouterType
+    func build() -> LaunchesRouterType
 }
 
 protocol LaunchesRouterType: Router {
     var viewController: LaunchesViewControllerType { get }
+    
+    func showLaunchDetails(for launch: Launch)
 }
 
 protocol LaunchesPresenterType: Presenter, LaunchesViewControllerDelegate {
