@@ -6,7 +6,8 @@ final class AppModule: AppModuleType {
     private let window: UIWindow
     private let launchesModule: LaunchesModuleType
 
-    init(window: UIWindow, launchesModule: LaunchesModuleType) {
+    init(window: UIWindow,
+         launchesModule: LaunchesModuleType) {
         self.window = window
         self.launchesModule = launchesModule
     }

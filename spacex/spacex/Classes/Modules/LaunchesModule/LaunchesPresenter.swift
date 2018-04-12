@@ -45,4 +45,7 @@ extension LaunchesPresenter {
 
 extension LaunchesPresenter: LaunchesViewControllerDelegate {
     
+    func didSelectLaunch(_ launch: LaunchViewModel) {
+        self.router?.showLaunchDetails(for: launch.launch)
+    }
 }

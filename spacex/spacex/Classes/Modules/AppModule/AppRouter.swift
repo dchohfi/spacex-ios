@@ -8,28 +8,30 @@ final class AppRouter: AppRouterType {
 
     private(set) var currentChield: Router?
     
-    init(window: UIWindow, launchesModule: LaunchesModuleType) {
+    init(window: UIWindow,
+         launchesModule: LaunchesModuleType) {
         self.window = window
         self.launchesModule = launchesModule
     }
     
     func start() {
-        let launchesRouter = self.launchesModule.buildWith(listener: self)
-        self.currentChield = launchesRouter
-
-        let viewController = launchesRouter.viewController.asViewController()
-        self.window.rootViewController = UINavigationController(rootViewController: viewController)
-        self.window.makeKeyAndVisible()
-
-        launchesRouter.start()
+        self.showLaunches()
     }
     
     func stop() {
     }
 }
 
-extension AppRouter: LaunchesListenter {
-    func didSelect(launch: Launch) {
+extension AppRouter {
+    
+    func showLaunches() {
+        let launchesRouter = self.launchesModule.build()
+        self.currentChield = launchesRouter
         
+        let viewController = launchesRouter.viewController.asViewController()
+        self.window.rootViewController = UINavigationController(rootViewController: viewController)
+        self.window.makeKeyAndVisible()
+        
+        launchesRouter.start()
     }
 }

@@ -2,11 +2,16 @@ import UIKit
 import ModuleArchitecture
 import SnapKit
 
+protocol LaunchesViewLayoutDelegate: class {
+    func didSelectLaunch(_ launch: LaunchViewModel)
+}
+
 final class LaunchesViewLayout: UIView {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         return tableView
     }()
@@ -16,6 +21,8 @@ final class LaunchesViewLayout: UIView {
             self.tableView.reloadData()
         }
     }
+    
+    weak var delegate: LaunchesViewLayoutDelegate?
 
     init() {
         super.init(frame: .zero)
@@ -38,6 +45,15 @@ extension LaunchesViewLayout: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
         cell.textLabel?.text = self.viewModel.viewModels[indexPath.row].titleLabel
         return cell
+    }
+}
+
+extension LaunchesViewLayout: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let launch = viewModel.viewModels[indexPath.row]
+        self.delegate?.didSelectLaunch(launch)
     }
 }
 
