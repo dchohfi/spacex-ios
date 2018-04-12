@@ -19,6 +19,6 @@ protocol LaunchesViewControllerType: ViewControllerType {
     var delegate: LaunchesViewControllerDelegate? { get set }
 }
 
-protocol LaunchesView: View where ViewModelType == LaunchesViewModel {
+protocol LaunchesView: View where ViewStateType == LaunchesViewState {
     
 }

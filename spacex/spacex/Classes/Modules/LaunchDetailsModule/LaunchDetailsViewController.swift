@@ -17,9 +17,9 @@ final class LaunchDetailsViewController: UIViewController, LaunchDetailsView, La
         super.viewDidLoad()
         self.customizeInterface()
     }
-    
-    func show(viewModel: LaunchDetailsViewModel) {
-        self.layout.show(viewModel: viewModel)
+
+    func render(viewState: LaunchDetailsViewState) {
+        self.layout.render(viewState: viewState)
     }
 }
 

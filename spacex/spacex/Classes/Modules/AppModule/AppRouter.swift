@@ -6,7 +6,7 @@ final class AppRouter: AppRouterType {
 
     private let launchesModule: LaunchesModuleType
 
-    private(set) var currentChield: Router?
+    private(set) var currentChild: Router?
     
     init(window: UIWindow,
          launchesModule: LaunchesModuleType) {
@@ -17,16 +17,13 @@ final class AppRouter: AppRouterType {
     func start() {
         self.showLaunches()
     }
-    
-    func stop() {
-    }
 }
 
 extension AppRouter {
     
     func showLaunches() {
         let launchesRouter = self.launchesModule.build()
-        self.currentChield = launchesRouter
+        self.currentChild = launchesRouter
         
         let viewController = launchesRouter.viewController.asViewController()
         self.window.rootViewController = UINavigationController(rootViewController: viewController)

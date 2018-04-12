@@ -10,7 +10,7 @@ struct LaunchViewModel {
     }
 }
 
-struct LaunchesViewModel: ViewModel {
+struct LaunchesViewState: ViewState {
     let viewModels: [LaunchViewModel]
 
     init() {

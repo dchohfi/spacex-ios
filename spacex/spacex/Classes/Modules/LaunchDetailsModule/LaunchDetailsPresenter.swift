@@ -17,12 +17,8 @@ final class LaunchDetailsPresenter<View: LaunchDetailsView>: LaunchDetailsPresen
     }
     
     func start() {
-        let viewModel = LaunchDetailsViewModel(titleLabel: self.launch.details ?? "")
-        self.view?.show(viewModel: viewModel)
-    }
-    
-    func stop() {
-        
+        let viewState = LaunchDetailsViewState(titleLabel: self.launch.details ?? "")
+        self.view?.render(viewState: viewState)
     }
 }
 

@@ -26,17 +26,13 @@ final class LaunchesPresenter<View: LaunchesView>: LaunchesPresenterType {
             }
             .disposed(by: self.disposeBag)
     }
-    
-    func stop() {
-        
-    }
 }
 
 extension LaunchesPresenter {
     private func handleLaunchesEvent(_ event: SingleEvent<[Launch]>) {
         switch event {
         case .success(let launches):
-            self.view?.show(viewModel: LaunchesViewModel(launches: launches))
+            self.view?.render(viewState: LaunchesViewState(launches: launches))
         case .error:
             break
         }

@@ -14,9 +14,9 @@ final class LaunchDetailsViewLayout: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) { fatalError("Not implemented") }
-    
-    func show(viewModel: LaunchDetailsViewModel) {
-        let details = viewModel.titleLabel
+
+    func render(viewState: LaunchDetailsViewState) {
+        let details = viewState.titleLabel
         self.descriptionLabel.text = details
     }
 }

@@ -10,13 +10,13 @@ protocol LaunchDetailsRouterType: Router {
 }
 
 protocol LaunchDetailsPresenterType: Presenter, LaunchDetailsViewControllerDelegate {
-    weak var listener: LaunchDetailsListenter? { get set }
+    var listener: LaunchDetailsListenter? { get set }
 }
 
 protocol LaunchDetailsViewControllerType: ViewControllerType {
-    weak var delegate: LaunchDetailsViewControllerDelegate? { get set }
+    var delegate: LaunchDetailsViewControllerDelegate? { get set }
 }
 
-protocol LaunchDetailsView: View where ViewModelType == LaunchDetailsViewModel {
+protocol LaunchDetailsView: View where ViewStateType == LaunchDetailsViewState {
     
 }

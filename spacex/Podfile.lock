@@ -1,10 +1,12 @@
 PODS:
-  - Alamofire (4.7.0)
+  - Alamofire (4.7.1)
+  - Cuckoo (0.11.3)
   - DataManager (1.0.0):
     - Moya
     - RxSwift
     - SwiftResolver
   - DataManagerTests (0.1.0):
+    - Cuckoo
     - DataManager
     - Nimble
     - Quick
@@ -13,13 +15,13 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ModuleArchitecture (0.2.0)
-  - Moya (11.0.1):
-    - Moya/Core (= 11.0.1)
-  - Moya/Core (11.0.1):
+  - ModuleArchitecture (0.3.0)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - Nimble (7.0.3)
+  - Nimble (7.1.0)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
   - Nimble-Snapshots/Core (6.3.0):
@@ -30,7 +32,7 @@ PODS:
   - RxSwift (4.1.2)
   - SnapKit (4.0.0)
   - SwiftGen (5.3.0)
-  - SwiftLint (0.25.0)
+  - SwiftLint (0.25.1)
   - SwiftResolver (1.0.9)
 
 DEPENDENCIES:
@@ -50,20 +52,21 @@ EXTERNAL SOURCES:
     :path: ../DataManager
 
 SPEC CHECKSUMS:
-  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Cuckoo: 97522dd7ac6f18adba6022bdc74aa69e82ca691a
   DataManager: 0a1112321ef2c3b64017b66eacb553f62d4dd599
-  DataManagerTests: 2a8854f2d74d4eae54dfb936f06ae6b3cc7425c0
+  DataManagerTests: 767a6cab7873fa8dac9891bf2550ba3469034ce1
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ModuleArchitecture: 6c31f70d317ae4804858ac5f6af8740d1d8d22b3
-  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  ModuleArchitecture: ed636f918b2264fd99e01285b4c02fcdca4ac99f
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Nimble: 9c6651c3021af6de54c3ed90a4a0a87d548f7359
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   SwiftResolver: 18070cbf9005d36248506b01105729ca2372168a
 
 PODFILE CHECKSUM: 48e34c01eb2f9eaa7cfe5bf01d4a6d1d81bfebab

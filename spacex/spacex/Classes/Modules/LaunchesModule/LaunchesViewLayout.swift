@@ -16,7 +16,7 @@ final class LaunchesViewLayout: UIView {
         return tableView
     }()
 
-    private var viewModel = LaunchesViewModel() {
+    private var viewState = LaunchesViewState() {
         didSet {
             self.tableView.reloadData()
         }
@@ -31,19 +31,19 @@ final class LaunchesViewLayout: UIView {
     
     required init?(coder aDecoder: NSCoder) { fatalError("Not implemented") }
     
-    func show(viewModel: LaunchesViewModel) {
-        self.viewModel = viewModel
+    func render(viewState: LaunchesViewState) {
+        self.viewState = viewState
     }
 }
 
 extension LaunchesViewLayout: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.viewModels.count
+        return self.viewState.viewModels.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-        cell.textLabel?.text = self.viewModel.viewModels[indexPath.row].titleLabel
+        cell.textLabel?.text = self.viewState.viewModels[indexPath.row].titleLabel
         return cell
     }
 }
@@ -52,7 +52,7 @@ extension LaunchesViewLayout: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let launch = viewModel.viewModels[indexPath.row]
+        let launch = viewState.viewModels[indexPath.row]
         self.delegate?.didSelectLaunch(launch)
     }
 }

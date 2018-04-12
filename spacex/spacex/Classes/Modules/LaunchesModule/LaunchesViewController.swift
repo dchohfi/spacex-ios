@@ -16,9 +16,9 @@ final class LaunchesViewController: UIViewController, LaunchesView, LaunchesView
     override func loadView() {
         self.view = self.layout
     }
-    
-    func show(viewModel: LaunchesViewModel) {
-        self.layout.show(viewModel: viewModel)
+
+    func render(viewState: LaunchesViewState) {
+        self.layout.render(viewState: viewState)
     }
 }
 

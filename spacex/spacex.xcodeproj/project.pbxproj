@@ -12,7 +12,7 @@
 		2082CF61206D1DEB00AF63A8 /* LaunchesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF56206D1DEB00AF63A8 /* LaunchesRouter.swift */; };
 		2082CF62206D1DEB00AF63A8 /* LaunchesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF57206D1DEB00AF63A8 /* LaunchesPresenter.swift */; };
 		2082CF63206D1DEB00AF63A8 /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF58206D1DEB00AF63A8 /* LaunchesViewController.swift */; };
-		2082CF64206D1DEB00AF63A8 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF59206D1DEB00AF63A8 /* LaunchesViewModel.swift */; };
+		2082CF64206D1DEB00AF63A8 /* LaunchesViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF59206D1DEB00AF63A8 /* LaunchesViewState.swift */; };
 		2082CF65206D1DEB00AF63A8 /* LaunchesDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF5A206D1DEB00AF63A8 /* LaunchesDefinitions.swift */; };
 		2082CF66206D1DEB00AF63A8 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF5C206D1DEB00AF63A8 /* AppRouter.swift */; };
 		2082CF67206D1DEB00AF63A8 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CF5D206D1DEB00AF63A8 /* AppModule.swift */; };
@@ -28,7 +28,7 @@
 		98ECE40B206D64D700E707CF /* LaunchDetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE405206D64D700E707CF /* LaunchDetailsModule.swift */; };
 		98ECE40C206D64D700E707CF /* LaunchDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE406206D64D700E707CF /* LaunchDetailsPresenter.swift */; };
 		98ECE40D206D64D700E707CF /* LaunchDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE407206D64D700E707CF /* LaunchDetailsRouter.swift */; };
-		98ECE40E206D64D700E707CF /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE408206D64D700E707CF /* LaunchDetailsViewModel.swift */; };
+		98ECE40E206D64D700E707CF /* LaunchDetailsViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE408206D64D700E707CF /* LaunchDetailsViewState.swift */; };
 		98ECE40F206D64D700E707CF /* LaunchDetailsViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE409206D64D700E707CF /* LaunchDetailsViewLayout.swift */; };
 		98ECE411206D651100E707CF /* LaunchDetailsDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE410206D651100E707CF /* LaunchDetailsDefinitions.swift */; };
 		A07F2B7220126C1600457DED /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = A07F2B7120126C1600457DED /* swiftgen.yml */; };
@@ -55,7 +55,7 @@
 		2082CF56206D1DEB00AF63A8 /* LaunchesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesRouter.swift; sourceTree = "<group>"; };
 		2082CF57206D1DEB00AF63A8 /* LaunchesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesPresenter.swift; sourceTree = "<group>"; };
 		2082CF58206D1DEB00AF63A8 /* LaunchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
-		2082CF59206D1DEB00AF63A8 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
+		2082CF59206D1DEB00AF63A8 /* LaunchesViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesViewState.swift; sourceTree = "<group>"; };
 		2082CF5A206D1DEB00AF63A8 /* LaunchesDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesDefinitions.swift; sourceTree = "<group>"; };
 		2082CF5C206D1DEB00AF63A8 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		2082CF5D206D1DEB00AF63A8 /* AppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		98ECE405206D64D700E707CF /* LaunchDetailsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModule.swift; sourceTree = "<group>"; };
 		98ECE406206D64D700E707CF /* LaunchDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsPresenter.swift; sourceTree = "<group>"; };
 		98ECE407206D64D700E707CF /* LaunchDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsRouter.swift; sourceTree = "<group>"; };
-		98ECE408206D64D700E707CF /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
+		98ECE408206D64D700E707CF /* LaunchDetailsViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewState.swift; sourceTree = "<group>"; };
 		98ECE409206D64D700E707CF /* LaunchDetailsViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewLayout.swift; sourceTree = "<group>"; };
 		98ECE410206D651100E707CF /* LaunchDetailsDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsDefinitions.swift; sourceTree = "<group>"; };
 		A07F2B7120126C1600457DED /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 				2082CF56206D1DEB00AF63A8 /* LaunchesRouter.swift */,
 				2082CF57206D1DEB00AF63A8 /* LaunchesPresenter.swift */,
 				2082CF58206D1DEB00AF63A8 /* LaunchesViewController.swift */,
-				2082CF59206D1DEB00AF63A8 /* LaunchesViewModel.swift */,
+				2082CF59206D1DEB00AF63A8 /* LaunchesViewState.swift */,
 				2082CF5A206D1DEB00AF63A8 /* LaunchesDefinitions.swift */,
 			);
 			path = LaunchesModule;
@@ -250,7 +250,7 @@
 				98ECE407206D64D700E707CF /* LaunchDetailsRouter.swift */,
 				98ECE404206D64D700E707CF /* LaunchDetailsViewController.swift */,
 				98ECE409206D64D700E707CF /* LaunchDetailsViewLayout.swift */,
-				98ECE408206D64D700E707CF /* LaunchDetailsViewModel.swift */,
+				98ECE408206D64D700E707CF /* LaunchDetailsViewState.swift */,
 			);
 			path = LaunchDetailsModule;
 			sourceTree = "<group>";
@@ -501,6 +501,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftResolver/SwiftResolver.framework",
+				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
 				"${BUILT_PRODUCTS_DIR}/DataManagerTests/DataManagerTests.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
@@ -515,6 +516,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftResolver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DataManagerTests.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -583,9 +585,9 @@
 				2082CF65206D1DEB00AF63A8 /* LaunchesDefinitions.swift in Sources */,
 				2082CF66206D1DEB00AF63A8 /* AppRouter.swift in Sources */,
 				98ECE40B206D64D700E707CF /* LaunchDetailsModule.swift in Sources */,
-				98ECE40E206D64D700E707CF /* LaunchDetailsViewModel.swift in Sources */,
+				98ECE40E206D64D700E707CF /* LaunchDetailsViewState.swift in Sources */,
 				98ECE40D206D64D700E707CF /* LaunchDetailsRouter.swift in Sources */,
-				2082CF64206D1DEB00AF63A8 /* LaunchesViewModel.swift in Sources */,
+				2082CF64206D1DEB00AF63A8 /* LaunchesViewState.swift in Sources */,
 				2082CF60206D1DEB00AF63A8 /* LaunchesModule.swift in Sources */,
 				98ECE40C206D64D700E707CF /* LaunchDetailsPresenter.swift in Sources */,
 				98ECE40A206D64D700E707CF /* LaunchDetailsViewController.swift in Sources */,

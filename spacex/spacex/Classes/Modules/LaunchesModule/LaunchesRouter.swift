@@ -9,7 +9,7 @@ final class LaunchesRouter: LaunchesRouterType {
     
     private let launchDetailsModule: LaunchDetailsModuleType
 
-    private(set) var currentChield: Router?
+    private(set) var currentChild: Router?
     
     init(presenter: LaunchesPresenterType,
          viewController: LaunchesViewControllerType,
@@ -22,23 +22,18 @@ final class LaunchesRouter: LaunchesRouterType {
     func start() {
         self.presenter.start()
     }
-    
-    func stop() {
-        self.presenter.stop()
-    }
 }
 
 extension LaunchesRouter {
     
     func showLaunchDetails(for launch: Launch) {
         let launchDetailsRouter = self.launchDetailsModule.build(withLaunch: launch)
-        self.currentChield = launchDetailsRouter
+        self.currentChild = launchDetailsRouter
         
         let viewController = launchDetailsRouter.viewController.asViewController()
         let navigationController = self.viewController.asViewController().navigationController
         navigationController?.pushViewController(viewController, animated: true)
         
         launchDetailsRouter.start()
-        
     }
 }

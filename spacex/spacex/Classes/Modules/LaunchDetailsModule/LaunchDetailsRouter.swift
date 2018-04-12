@@ -3,8 +3,8 @@ import ModuleArchitecture
 final class LaunchDetailsRouter: LaunchDetailsRouterType {
     private let presenter: LaunchDetailsPresenterType
     let viewController: LaunchDetailsViewControllerType
-    
-    private(set) var currentChield: Router?
+
+    private(set) var currentChild: Router?
     
     init(presenter: LaunchDetailsPresenterType, viewController: LaunchDetailsViewControllerType) {
         self.presenter = presenter
@@ -13,9 +13,5 @@ final class LaunchDetailsRouter: LaunchDetailsRouterType {
     
     func start() {
         self.presenter.start()
-    }
-    
-    func stop() {
-        self.presenter.stop()
     }
 }

@@ -1,6 +1,6 @@
 import ModuleArchitecture
 
-struct LaunchDetailsViewModel: ViewModel {
+struct LaunchDetailsViewState: ViewState {
     let titleLabel: String
     init(titleLabel: String) {
         self.titleLabel = titleLabel
