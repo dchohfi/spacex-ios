@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.7.1)
+  - Alamofire (4.7.2)
   - Cuckoo (0.11.3)
   - DataManager (1.0.0):
     - Moya
@@ -15,7 +15,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ModuleArchitecture (0.3.0)
+  - ModuleArchitecture (0.4.0)
   - Moya (11.0.2):
     - Moya/Core (= 11.0.2)
   - Moya/Core (11.0.2):
@@ -52,12 +52,12 @@ EXTERNAL SOURCES:
     :path: ../DataManager
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Cuckoo: 97522dd7ac6f18adba6022bdc74aa69e82ca691a
   DataManager: 0a1112321ef2c3b64017b66eacb553f62d4dd599
   DataManagerTests: 767a6cab7873fa8dac9891bf2550ba3469034ce1
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ModuleArchitecture: ed636f918b2264fd99e01285b4c02fcdca4ac99f
+  ModuleArchitecture: ac4c9bd4b4a09fc6f7c325a9facb89e99819d17e
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   Nimble: 9c6651c3021af6de54c3ed90a4a0a87d548f7359
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
