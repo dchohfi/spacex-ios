@@ -7,6 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     private let container: DataContainerType = DataContainer(plugins: [NetworkLoggerPlugin()])
+    private var appCoordinator: AppCoordinatorType?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -15,13 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
 
         let launchDetailsModule = LaunchDetailsModule()
-        let launchesModule = LaunchesModule(repository: container.resolve(), launchDetailsModule: launchDetailsModule)
+        let launchListModule = LaunchListModule(launchDetailsModule: launchDetailsModule,
+                                                spaceXInteractor: container.resolve())
         
-        let appRouter = AppModule(window: window,
-                                  launchesModule: launchesModule).build()
-        self.appRouter = appRouter
+        let appCoordinator = AppModule(window: window,
+                                       launchListModule: launchListModule).createCoordinator()
+        appCoordinator.start()
 
-        appRouter.start()
+        self.appCoordinator = appCoordinator
 
         return true
     }
