@@ -14,6 +14,24 @@
 		636C8AC82010FE5B00E016AC /* spacexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C8AC52010FE5B00E016AC /* spacexTests.swift */; };
 		636C8ACB2010FF8C00E016AC /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C8ACA2010FF8C00E016AC /* GeneratedMocks.swift */; };
 		654CED3122D8628465632E12 /* Pods_spacexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F278F7B39FBD0D3D2D8E17 /* Pods_spacexTests.framework */; };
+		98A71C94222428E00025F736 /* LaunchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C80222428E00025F736 /* LaunchListCoordinator.swift */; };
+		98A71C95222428E00025F736 /* LaunchListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C81222428E00025F736 /* LaunchListPresenter.swift */; };
+		98A71C96222428E00025F736 /* LaunchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C82222428E00025F736 /* LaunchListViewController.swift */; };
+		98A71C97222428E00025F736 /* LaunchListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C83222428E00025F736 /* LaunchListComponent.swift */; };
+		98A71C98222428E00025F736 /* LaunchListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C84222428E00025F736 /* LaunchListModule.swift */; };
+		98A71C99222428E00025F736 /* LaunchListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C85222428E00025F736 /* LaunchListConfiguration.swift */; };
+		98A71C9A222428E00025F736 /* LaunchListDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C86222428E00025F736 /* LaunchListDefinitions.swift */; };
+		98A71C9B222428E00025F736 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C88222428E00025F736 /* AppCoordinator.swift */; };
+		98A71C9C222428E00025F736 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C89222428E00025F736 /* AppModule.swift */; };
+		98A71C9D222428E00025F736 /* AppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C8A222428E00025F736 /* AppPresenter.swift */; };
+		98A71C9E222428E00025F736 /* AppDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C8B222428E00025F736 /* AppDefinitions.swift */; };
+		98A71C9F222428E00025F736 /* LaunchDetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C8D222428E00025F736 /* LaunchDetailsModule.swift */; };
+		98A71CA0222428E00025F736 /* LaunchDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C8E222428E00025F736 /* LaunchDetailsCoordinator.swift */; };
+		98A71CA1222428E00025F736 /* LaunchDetailsDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C8F222428E00025F736 /* LaunchDetailsDefinitions.swift */; };
+		98A71CA2222428E00025F736 /* LaunchDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C90222428E00025F736 /* LaunchDetailsPresenter.swift */; };
+		98A71CA3222428E00025F736 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C91222428E00025F736 /* LaunchDetailsViewController.swift */; };
+		98A71CA4222428E00025F736 /* LaunchDetailsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C92222428E00025F736 /* LaunchDetailsConfiguration.swift */; };
+		98A71CA5222428E00025F736 /* LaunchDetailsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A71C93222428E00025F736 /* LaunchDetailsComponent.swift */; };
 		A07F2B7220126C1600457DED /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = A07F2B7120126C1600457DED /* swiftgen.yml */; };
 		A07F2B7420126C2600457DED /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = A07F2B7320126C2600457DED /* colors.json */; };
 		A07F2B7820126CAB00457DED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A07F2B7A20126CAB00457DED /* Localizable.strings */; };
@@ -45,6 +63,24 @@
 		636C8ACA2010FF8C00E016AC /* GeneratedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		6459C9607ADDD27EFC3425C8 /* Pods_spacex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spacex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E56A3272735DC5634B7B401 /* Pods-spacex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spacex.release.xcconfig"; path = "Pods/Target Support Files/Pods-spacex/Pods-spacex.release.xcconfig"; sourceTree = "<group>"; };
+		98A71C80222428E00025F736 /* LaunchListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListCoordinator.swift; sourceTree = "<group>"; };
+		98A71C81222428E00025F736 /* LaunchListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListPresenter.swift; sourceTree = "<group>"; };
+		98A71C82222428E00025F736 /* LaunchListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListViewController.swift; sourceTree = "<group>"; };
+		98A71C83222428E00025F736 /* LaunchListComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListComponent.swift; sourceTree = "<group>"; };
+		98A71C84222428E00025F736 /* LaunchListModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListModule.swift; sourceTree = "<group>"; };
+		98A71C85222428E00025F736 /* LaunchListConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListConfiguration.swift; sourceTree = "<group>"; };
+		98A71C86222428E00025F736 /* LaunchListDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListDefinitions.swift; sourceTree = "<group>"; };
+		98A71C88222428E00025F736 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		98A71C89222428E00025F736 /* AppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		98A71C8A222428E00025F736 /* AppPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPresenter.swift; sourceTree = "<group>"; };
+		98A71C8B222428E00025F736 /* AppDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefinitions.swift; sourceTree = "<group>"; };
+		98A71C8D222428E00025F736 /* LaunchDetailsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModule.swift; sourceTree = "<group>"; };
+		98A71C8E222428E00025F736 /* LaunchDetailsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsCoordinator.swift; sourceTree = "<group>"; };
+		98A71C8F222428E00025F736 /* LaunchDetailsDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsDefinitions.swift; sourceTree = "<group>"; };
+		98A71C90222428E00025F736 /* LaunchDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsPresenter.swift; sourceTree = "<group>"; };
+		98A71C91222428E00025F736 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewController.swift; sourceTree = "<group>"; };
+		98A71C92222428E00025F736 /* LaunchDetailsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsConfiguration.swift; sourceTree = "<group>"; };
+		98A71C93222428E00025F736 /* LaunchDetailsComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsComponent.swift; sourceTree = "<group>"; };
 		A07F2B7120126C1600457DED /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
 		A07F2B7320126C2600457DED /* colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		A07F2B7B20126CB500457DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -79,6 +115,7 @@
 		20AC24D12007CB20009EB1A4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				98A71C7E222428E00025F736 /* Modules */,
 				20AC24D22007CB20009EB1A4 /* AppDelegate.swift */,
 				A0A7900E2018C51400A155EF /* SwiftGen */,
 			);
@@ -172,6 +209,55 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		98A71C7E222428E00025F736 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				98A71C7F222428E00025F736 /* LaunchList */,
+				98A71C87222428E00025F736 /* App */,
+				98A71C8C222428E00025F736 /* LaunchDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		98A71C7F222428E00025F736 /* LaunchList */ = {
+			isa = PBXGroup;
+			children = (
+				98A71C80222428E00025F736 /* LaunchListCoordinator.swift */,
+				98A71C81222428E00025F736 /* LaunchListPresenter.swift */,
+				98A71C82222428E00025F736 /* LaunchListViewController.swift */,
+				98A71C83222428E00025F736 /* LaunchListComponent.swift */,
+				98A71C84222428E00025F736 /* LaunchListModule.swift */,
+				98A71C85222428E00025F736 /* LaunchListConfiguration.swift */,
+				98A71C86222428E00025F736 /* LaunchListDefinitions.swift */,
+			);
+			path = LaunchList;
+			sourceTree = "<group>";
+		};
+		98A71C87222428E00025F736 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				98A71C88222428E00025F736 /* AppCoordinator.swift */,
+				98A71C89222428E00025F736 /* AppModule.swift */,
+				98A71C8A222428E00025F736 /* AppPresenter.swift */,
+				98A71C8B222428E00025F736 /* AppDefinitions.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		98A71C8C222428E00025F736 /* LaunchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				98A71C8D222428E00025F736 /* LaunchDetailsModule.swift */,
+				98A71C8E222428E00025F736 /* LaunchDetailsCoordinator.swift */,
+				98A71C8F222428E00025F736 /* LaunchDetailsDefinitions.swift */,
+				98A71C90222428E00025F736 /* LaunchDetailsPresenter.swift */,
+				98A71C91222428E00025F736 /* LaunchDetailsViewController.swift */,
+				98A71C92222428E00025F736 /* LaunchDetailsConfiguration.swift */,
+				98A71C93222428E00025F736 /* LaunchDetailsComponent.swift */,
+			);
+			path = LaunchDetails;
+			sourceTree = "<group>";
+		};
 		A0A7900E2018C51400A155EF /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +291,6 @@
 				20CE87492007934400BB6DC3 /* Frameworks */,
 				20CE874A2007934400BB6DC3 /* Resources */,
 				0F04B136532ABDC308F14C39 /* [CP] Embed Pods Frameworks */,
-				45629F16BC02B9963B967EA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,7 +311,6 @@
 				20CE875D2007934400BB6DC3 /* Frameworks */,
 				20CE875E2007934400BB6DC3 /* Resources */,
 				B9D9CAF58D643210689F02CD /* [CP] Embed Pods Frameworks */,
-				5208F0E28FAD18E0D9F30391 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,12 +391,13 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-spacex/Pods-spacex-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-spacex/Pods-spacex-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DataManager/DataManager.framework",
 				"${BUILT_PRODUCTS_DIR}/ModuleArchitecture/ModuleArchitecture.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftResolver/SwiftResolver.framework",
@@ -324,13 +409,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModuleArchitecture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftResolver.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spacex/Pods-spacex-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spacex/Pods-spacex-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		20CE876F200796AB00BB6DC3 /* SwiftLint */ = {
@@ -346,36 +432,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
-		};
-		45629F16BC02B9963B967EA2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spacex/Pods-spacex-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5208F0E28FAD18E0D9F30391 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spacexTests/Pods-spacexTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		639FE5612010FBA800A2079D /* Cuckoo */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -411,11 +467,12 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-spacexTests/Pods-spacexTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-spacexTests/Pods-spacexTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DataManager/DataManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftResolver/SwiftResolver.framework",
 				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
@@ -431,6 +488,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DataManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftResolver.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
@@ -442,7 +500,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spacexTests/Pods-spacexTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spacexTests/Pods-spacexTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BC8644BED96E2B8EF16F772D /* [CP] Check Pods Manifest.lock */ = {
@@ -488,10 +546,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A71C9B222428E00025F736 /* AppCoordinator.swift in Sources */,
+				98A71C96222428E00025F736 /* LaunchListViewController.swift in Sources */,
 				A0A790142018C51400A155EF /* Localized.generated.swift in Sources */,
+				98A71C9E222428E00025F736 /* AppDefinitions.swift in Sources */,
 				20AC24D92007CB20009EB1A4 /* AppDelegate.swift in Sources */,
+				98A71C94222428E00025F736 /* LaunchListCoordinator.swift in Sources */,
+				98A71C9C222428E00025F736 /* AppModule.swift in Sources */,
+				98A71C9D222428E00025F736 /* AppPresenter.swift in Sources */,
+				98A71CA3222428E00025F736 /* LaunchDetailsViewController.swift in Sources */,
+				98A71CA0222428E00025F736 /* LaunchDetailsCoordinator.swift in Sources */,
 				A0A790122018C51400A155EF /* ColorsConstants.generated.swift in Sources */,
+				98A71C99222428E00025F736 /* LaunchListConfiguration.swift in Sources */,
 				A0A790132018C51400A155EF /* ImagesConstants.generated.swift in Sources */,
+				98A71CA5222428E00025F736 /* LaunchDetailsComponent.swift in Sources */,
+				98A71CA1222428E00025F736 /* LaunchDetailsDefinitions.swift in Sources */,
+				98A71C9F222428E00025F736 /* LaunchDetailsModule.swift in Sources */,
+				98A71C97222428E00025F736 /* LaunchListComponent.swift in Sources */,
+				98A71CA2222428E00025F736 /* LaunchDetailsPresenter.swift in Sources */,
+				98A71C95222428E00025F736 /* LaunchListPresenter.swift in Sources */,
+				98A71C9A222428E00025F736 /* LaunchListDefinitions.swift in Sources */,
+				98A71CA4222428E00025F736 /* LaunchDetailsConfiguration.swift in Sources */,
+				98A71C98222428E00025F736 /* LaunchListModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
